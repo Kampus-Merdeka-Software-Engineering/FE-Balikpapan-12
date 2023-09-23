@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 656px;
+    background-color: rgb(255, 248, 248);
+}
+
+.wrapper{
+    width: 652px;
+    padding: 2rem 1rem;
+    margin: 300px auto;
+    background: transparent;
+    border: 2px solid rgba(225, 225, 225, .3);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    color: #111111;
+    border-radius: 50px;
+    box-shadow: 0 20px 35px whitesmoke(0, 0, 0, 0.1);
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 60px;
+    text-align: center;
+    color: #6C9EBA;
+    margin: 38px 0px;
+}
+
+.wrapper h2{
+    font-size: 30px;
+    text-align: center;
+    margin: 89px 0px;
+}
+
+.wrapper input-box{
+    position: relative;
+    margin: 34px 0px;
+    border-radius: 50px;
+}
+
+.input-box input{
+    width: 497px;
+    height: 58px;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.input-box input::placeholder{
+    color: black;
+
+}
+
+.wrapper .button{
+    width: 319px;
+    height: 47px;
+    margin: 21px;
+    background: #22668D;
+    color: #ffff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 30px;
+    justify-content: center;
+    
+}
+
+.button{
+    justify-content: center;
+    
+}
+
+.wrapper .SignUp-link{
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.SignUp-link p a{
+    color: black;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.SignUp-link p a:hover{
+    text-decoration: underline;
+}
+
