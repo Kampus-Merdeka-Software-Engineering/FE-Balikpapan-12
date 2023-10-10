@@ -64,6 +64,8 @@ document.addEventListener("DOMContentLoaded", function () {
       pesan: document.getElementById("message").value
     };
 
+    console.log(formData);
+
     fetch("https://be-balikpapan-12-production.up.railway.app/contact", {
       method: "POST",
       headers: {
@@ -72,14 +74,11 @@ document.addEventListener("DOMContentLoaded", function () {
     body: JSON.stringify(formData),
     })
       .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
         return response.json();
       })
       .then((data) => {
-        alert('Berhasil Submit');
         console.log("Server response:", data);
+        alert('Berhasil Submit');
         window.location.reload();
       })
       .catch((error) => {
@@ -99,7 +98,7 @@ function redirectYoutube(url) {
 const url = '/classes';
 const programContainer = document.getElementById('programContainer');
 
-fetch("https://be-balikpapan-12-production.up.railway.app/classes")
+fetch("https://be-balikpapan-12-production.up.railway.app/classes") 
     .then(response => {
         return response.json();
     })
