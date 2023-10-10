@@ -98,7 +98,7 @@ function redirectYoutube(url) {
 const url = '/classes';
 const programContainer = document.getElementById('programContainer');
 
-fetch("https://be-balikpapan-12-production.up.railway.app/classes") 
+fetch("https://be-balikpapan-12-production.up.railway.app/class") 
     .then(response => {
         return response.json();
     })
